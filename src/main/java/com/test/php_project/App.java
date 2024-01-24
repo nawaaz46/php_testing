@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 /**
  * Hello world!
  *
@@ -15,8 +17,8 @@ public class App
 {
     public static void main( String[] args ) throws InterruptedException
     {
-    	System.setProperty("webdriver.chrome.driver", "D:\\Nawaaz\\StarAgile\\chromedriver-win64\\chromedriver.exe");
-		
+    	//System.setProperty("webdriver.chrome.driver", "D:\\Nawaaz\\StarAgile\\chromedriver-win64\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
 		
