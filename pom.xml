@@ -44,7 +44,7 @@
 
   <build>
 	  
-	  <finalName>php-project</finalName>
+	  <finalName>php_project</finalName>
 	  <plugins>
 		  <plugin>
 			  <artifactId>maven-assembly-plugin</artifactId>
